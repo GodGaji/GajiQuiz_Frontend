@@ -1,0 +1,10 @@
+.App {
+    position: absolute;
+    margin:0px;
+    padding:0px;
+    bottom:0;
+    top:0;
+    width:100%;
+    background:white; /*defualt*/
+    overflow-x:hidden;
+}

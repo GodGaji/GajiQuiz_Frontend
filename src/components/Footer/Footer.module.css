@@ -1,0 +1,30 @@
+.App {
+    background:#D2D2D2;
+    width:100%;
+    height:200px;
+    overflow-x:hidden;
+}
+
+.box {
+    position: relative;
+    width:600px;
+    height:100%;
+    left:50%;
+    transform:translateX(-50%);
+    display:grid;
+    grid-template-columns : 1fr 1fr 1fr;
+}
+
+.item {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*mobile*/
+@media (max-width:600px){
+    .box{
+        width:100%;
+        grid-template-columns: 1fr;
+    }
+}

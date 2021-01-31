@@ -1,8 +1,37 @@
-.box {
-    background-color:black;
-    color:white;
-    position:absolute;
-    left:50%;
-    transform: translateX(-50%);
-    top:50%;
+.App {
+    font-family: 'Noto Sans KR';
+}
+
+.myInfo {
+    background-color:#D2D2D2;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px;
+    height:200px;
+}
+
+.category {
+    display:grid;
+    grid-template-columns : 1fr 1fr;
+}
+
+.item {
+    background-color:#D2D2D2;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px;
+    height:200px;
+}
+
+/*mobile*/
+@media (max-width:600px){
+    .category{
+        grid-template-columns : 1fr;
+    }
+
+    .item {
+        height:100px;
+    }
 }
