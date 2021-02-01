@@ -1,0 +1,14 @@
+.App {
+    position: relative;
+    width:600px;
+    left:50%;
+    transform:translateX(-50%);
+    margin-bottom:100px;
+}
+
+/*mobile*/
+@media (max-width:600px){
+    .App{
+        width:100%;
+    }
+}
