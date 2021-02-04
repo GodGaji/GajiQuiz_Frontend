@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 export default function BackContainer({ children, color }: Props) {
   return (
     <>
-      <div className={cx('App')} style={{ background: color }}>
+      <div className={cx('App')} style={{ backgroundColor: color }}>
         {children}
       </div>
     </>
@@ -16,5 +16,5 @@ export default function BackContainer({ children, color }: Props) {
 
 interface Props {
   children: JSX.Element;
-  color?: String;
+  color?: string;
 }
