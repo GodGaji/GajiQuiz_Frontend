@@ -8,15 +8,17 @@ const cx = classNames.bind(styles);
 
 export default function LayoutContainer({ children, color, option }: Props) {
   return (
-    <BackContainer color={color} option={option}>
-      <div className={cx('App')}>{children}</div>
-      {option === 'footer' ? <Footer /> : null}
+    <BackContainer color={color}>
+      <>
+        <div className={cx('App')}>{children}</div>
+        {option === 'footer' ? <Footer /> : null}
+      </>
     </BackContainer>
   );
 }
 
 interface Props {
   children: JSX.Element;
-  color?: String;
-  option?: String;
+  color?: string;
+  option?: string;
 }

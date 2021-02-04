@@ -1,13 +1,13 @@
 import React from 'react';
-import styles from './Box.module.css';
+import styles from './Title.module.css';
 import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
 
-export default function Box({ children }: Props) {
+export default function Title({ children }: Props) {
   return <div className={cx('App')}>{children}</div>;
 }
 
 interface Props {
-  children: JSX.Element;
+  children: string;
 }

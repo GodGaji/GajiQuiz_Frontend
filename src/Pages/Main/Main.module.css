@@ -2,6 +2,11 @@
     font-family: 'Noto Sans KR';
 }
 
+.box {
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
 .myInfo {
     background-color:#D2D2D2;
     display:flex;
