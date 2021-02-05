@@ -4,10 +4,14 @@ import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
 
-export default function NavBar() {
+export default function NavBar({ title }: Props) {
   return (
     <div className={cx('App')}>
-      <div>Logo</div>
+      {title === undefined ? <div>Logo</div> : <div>{title}</div>}
     </div>
   );
+}
+
+interface Props {
+  title?: string;
 }

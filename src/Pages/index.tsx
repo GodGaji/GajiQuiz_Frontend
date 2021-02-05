@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 
 const Main = React.lazy(() => import('./Main'));
 const Login = React.lazy(() => import('./Login'));
@@ -13,6 +13,8 @@ export default function Routes() {
           <Route path="/" component={Main} exact />
           <Route path="/login" component={Login} exact />
           <Route path="/quiz" component={Quiz} />
+          {/* 규칙을 벗어나면 root(/)로 리다이렉션 */}
+          <Redirect path="*" to="/" />{' '}
         </Switch>
       </Suspense>
     </BrowserRouter>

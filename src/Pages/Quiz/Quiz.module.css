@@ -1,6 +1,17 @@
 .App {
-    font-family: 'Noto Sans KR';
-    font-size:50px;
-    font-weight: bold;
-    text-align: center;
+    padding-bottom:5vh;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: 1fr;
+    height:65vh;
+}
+
+.item {
+    background-color:#D2D2D2;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px;
 }
