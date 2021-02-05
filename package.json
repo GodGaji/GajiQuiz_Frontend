@@ -44,6 +44,8 @@
   },
   "devDependencies": {
     "@types/classnames": "^2.2.11",
+    "@types/qs": "^6.9.5",
+    "@types/react-helmet": "^6.1.0",
     "@typescript-eslint/eslint-plugin": "^4.14.2",
     "@typescript-eslint/parser": "^4.14.2",
     "eslint": "^7.19.0",
@@ -53,6 +55,7 @@
     "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
     "typescript": "^4.1.3"
   },

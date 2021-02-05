@@ -7,4 +7,6 @@
     width:100%;
     background:white; /*defualt*/
     overflow-x:hidden;
+    overflow-y:scroll;
+    font-family: 'Noto Sans KR';
 }
