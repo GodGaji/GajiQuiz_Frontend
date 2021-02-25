@@ -62,7 +62,7 @@ export default function Login() {
   }; //nickname length 확인 후 duplicateCheck 호출
 
   const duplicateCheck = useCallback(async (str) => {
-    const user = { id: 0, nickName: '' };
+    const user = { id: 0, nickName: str };
     const response = await fetch(
       `http://localhost:8080/api/v1/member/update/nickname`,
       {
